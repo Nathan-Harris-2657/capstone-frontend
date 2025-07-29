@@ -11,8 +11,9 @@ React Router layout with a navbar, an `AuthContext` with login and register page
 3. Build components and add routes to them in `App.jsx`.
 
 
+## PHASE 1
 ## 30 Second Elevator Pitch
-<!-- Buying a semi-trailer shouldn't feel like solving a puzzle. My capstone project, The Trailer Bible, is designed to help logistics companies, fleet managers, and owner-operators make informed decisions when purchasing trailers. It breaks down specifications, regulations, cost analysis, and compatibility across various trailer types—saving buyers time, money, and major headaches. -->
+1. Buying a semi-trailer shouldn't feel like solving a puzzle. My capstone project, The Trailer Bible, is designed to help logistics companies, fleet managers, and owner-operators make informed decisions when purchasing trailers. It breaks down specifications, regulations, cost analysis, and compatibility across various trailer types—saving buyers time, money, and major headaches.
 
 ## Concrete core features that will be implemented in the MVP
 1. Trailer Type Comparison Tool:
@@ -46,39 +47,39 @@ identifty and compare alertnate parts:
 
 
 ## Your project management system
-# high-level tickets on what needs to be done
-# how tickets will be assigned
+## high-level tickets on what needs to be done
+## how tickets will be assigned
 
- <!-- FRONTEND -->
+ # FRONTEND
  1. Interactive UI
  2. Componenets, Comparison Charts and Form Inputs
  3. Responsive Design for Desktop and Mobile
  4. Visual Elements, gallerys and data tables
 
- <!-- BACKEND -->
+ # BACKEND
  1. API (PSQL) servers the trailer date and users preferences and Info
  2. Trailer Spec database using PSQL
  3. budget calculator logic on server side for reliable processing
 
- <!-- INTERGRATION  -->
+ # INTERGRATION 
  1. User authentication for saving trailers
  2. secure endpoints for regulatory prefernces 
  3. state management with context to keep everything running smoothly
 
 
- # detailed database schema with all tables, properties, and relations defined\
-  <!-- TABLES -->
+ ## detailed database schema with all tables, properties, and relations defined\
+  # TABLES
   1. USER - authentifaction info, saved prefernces, role types
   2. TRAILERS - specs, dimensions, types, makes, models, images
   3. INDUSTRY - constructionm, aggriculture, freight, oil, gas, ect
 
-# list of API endpoints and how they interact with the tables
+## list of API endpoints and how they interact with the tables
 1. one user -> many saved trailers
 2. one trailer -> many features
 3. one industry -> many recommended trailer types
 
-# detailed wireframe of your frontend all pages, forms, routes, etc
-<!-- PAGES -->
+## detailed wireframe of your frontend all pages, forms, routes, etc
+# PAGES
 1. HEADER/NAVBAR: Logo + Name, navigation links, Search bar, profile drop down when logged in. 
 2. HOME PAGE: Brief Intro, Featured trailer types or industry highlights.
 3. TRAILER COMPARISON PAGE: sidbar filter by specification
@@ -143,7 +144,7 @@ WIRE FRAME + COMPONENETS TREE
 └────────────────────────────────────────────────────┘
 
 
-<!-- src/
+src/
 ├── App.jsx
 ├── index.js
 ├── assets/
@@ -188,8 +189,9 @@ WIRE FRAME + COMPONENETS TREE
 │   └── formatSpecs.js
 └── styles/
     ├── Global.css
-    └── theme.js -->
+    └── theme.js
 
+## PHASE 2 (Schema,Queries and middleware)
 
 
 
