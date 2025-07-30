@@ -6,14 +6,15 @@ export default function Navbar() {
   const { token, logout } = useAuth();
   return (
     <header id="navbar">
-      <NavLink id="brand" to="/">
-        <p>Frontend Template</p>
-      </NavLink>
       <nav>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/compare">Compare</NavLink>
+      <NavLink to="/industries">Industries</NavLink>
+      
         {token ? (
           <button onClick={logout}>Log out</button>
         ) : (
-          <NavLink to="/login">Log in</NavLink>
+          <NavLink to="/login">Log In</NavLink>
         )}
       </nav>
     </header>
