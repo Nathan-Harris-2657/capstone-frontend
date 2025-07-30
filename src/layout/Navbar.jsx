@@ -5,11 +5,12 @@ import { useAuth } from "../auth/AuthContext";
 export default function Navbar() {
   const { token, logout } = useAuth();
   return (
-    <header id="navbar">
+    <header>
       <nav>
-      <NavLink to="/">Home</NavLink>
+      <NavLink to="/home">Home</NavLink>
       <NavLink to="/compare">Compare</NavLink>
       <NavLink to="/industries">Industries</NavLink>
+      <NavLink to="/budget_tool">Budget Tool</NavLink>
       
         {token ? (
           <button onClick={logout}>Log out</button>
