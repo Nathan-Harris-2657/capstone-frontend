@@ -1,0 +1,17 @@
+#navContainer{
+    background-color: rgb(221, 168, 83);
+    display: flex;
+    justify-content: center;
+}
+#navLinks{
+    display: flex;
+    column-gap: 10px;
+    font-family: 'bebas neue';
+    font-size: 2rem;
+    
+    
+}
+#navLinks a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

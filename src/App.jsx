@@ -6,6 +6,9 @@ import ComparePage from "../pages/compare";
 import HomePage from "../pages/home";
 import IndustriesPage from "../pages/industries";
 import BudgetToolPage from "../pages/budgettool";
+import AccountPage from "../pages/accountpage";
+import VendorsPage from "../pages/vendorspage";
+import "../css/navbar.css"
 
 
 export default function App() {
@@ -15,9 +18,11 @@ export default function App() {
         <Route path="/" element={<HomePage/>} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/Account" element={<AccountPage/>}/>
         <Route path="/compare" element={<ComparePage/>}/>
         <Route path="/industries" element={<IndustriesPage/>}/>
         <Route path="/budget_tool" element={<BudgetToolPage/>}/>
+        <Route path="/vendors" element={<VendorsPage/>}/>
       </Route>
     </Routes>
   );
