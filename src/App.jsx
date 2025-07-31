@@ -2,13 +2,17 @@ import { Route, Routes } from "react-router";
 import Layout from "./layout/Layout";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
+// PAGES
 import ComparePage from "../pages/compare";
 import HomePage from "../pages/home";
 import IndustriesPage from "../pages/industries";
 import BudgetToolPage from "../pages/budgettool";
 import AccountPage from "../pages/accountpage";
 import VendorsPage from "../pages/vendorspage";
+// CSS FILES
 import "../css/navbar.css"
+import "../css/logo.css"
+
 
 
 export default function App() {

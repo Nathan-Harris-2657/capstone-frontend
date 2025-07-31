@@ -1,7 +1,11 @@
+import HomeGallery from "../components/homegallery"
+import "../css/homegallery.css"
+
+
 function HomePage(){
     return(
         <>
-        <h1>The Trailer Bible</h1>
+        <HomeGallery/>
         </>
     )
 }

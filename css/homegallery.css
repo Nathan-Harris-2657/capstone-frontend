@@ -1,0 +1,19 @@
+#homeGalleryContainer{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+
+}
+#galleryBackground{
+    background-color:rgb(221, 168, 83);
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+
+}
+
+#homeGalleryPics{
+    height: 25rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
