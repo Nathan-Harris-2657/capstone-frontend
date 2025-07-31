@@ -1,7 +1,11 @@
+import BudgetTool from "../components/budgettool"
+
 function BudgetToolPage(){
+
     return(
         <>
-        <h1>Budget Tool</h1>
+        <BudgetTool/>
+
         </>
     )
 }

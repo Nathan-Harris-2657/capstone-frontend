@@ -12,7 +12,7 @@ export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path="/home" element={<HomePage/>} />
+        <Route path="/" element={<HomePage/>} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/compare" element={<ComparePage/>}/>

@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <header>
       <nav>
-      <NavLink to="/home">Home</NavLink>
+      <NavLink to="/">Home</NavLink>
       <NavLink to="/compare">Compare</NavLink>
       <NavLink to="/industries">Industries</NavLink>
       <NavLink to="/budget_tool">Budget Tool</NavLink>
