@@ -1,8 +1,8 @@
-function FinancePage(){
+function ContactPage(){
     return(
         <>
         <h1>test</h1>
         </>
     )
 }
-export default FinancePage
+export default ContactPage

@@ -1,8 +1,8 @@
-function FinancePage(){
+function ArticlesPage(){
     return(
         <>
         <h1>test</h1>
         </>
     )
 }
-export default FinancePage
+export default ArticlesPage

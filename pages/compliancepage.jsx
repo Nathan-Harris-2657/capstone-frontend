@@ -1,8 +1,8 @@
-function FinancePage(){
+function CompliancePage(){
     return(
         <>
         <h1>test</h1>
         </>
     )
 }
-export default FinancePage
+export default CompliancePage
