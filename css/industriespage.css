@@ -1,0 +1,8 @@
+#industriesContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#wallPaper1{
+    height: 40rem;
+}

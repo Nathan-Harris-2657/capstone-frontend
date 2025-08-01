@@ -12,6 +12,10 @@ import VendorsPage from "../pages/vendorspage";
 // CSS FILES
 import "../css/navbar.css"
 import "../css/logo.css"
+import "../css/industriespage.css"
+import "../css/vendorspage.css"
+import "../css/login.css"
+import "../css/register.css"
 
 
 

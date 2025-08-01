@@ -1,0 +1,13 @@
+#vText{
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    font-size: 1.5rem;
+}
+
+#vendorContainer{
+    background-color: rgb(221, 168, 83);
+}
+#vendorInfo{
+    display: flex;
+    justify-content: center;
+}

@@ -23,19 +23,29 @@ export default function Login() {
 
   return (
     <>
-      <h1>Log in to your account</h1>
-      <form action={onLogin}>
-        <label>
-          Username
-          <input type="username" name="username" required />
-        </label>
-        <label>
-          Password
-          <input type="password" name="password" required />
-        </label>
-        <button>Login</button>
-        {error && <output>{error}</output>}
-      </form>
+    <div id="loginText">Login Below</div>
+
+    <div id="formLoginContainer2">
+      <div id="formLoginContainer">
+      
+        <form id="loginForm" action={onLogin}>
+
+            <label className="lLabel" >
+                Username
+              <input className="loginFormInputs" type="username" name="username" required />
+            </label>
+
+            <label className="lLabel">
+                Password
+              <input className="loginFormInputs" type="password" name="password" required />
+            </label>
+        
+
+          <button>Login</button>
+          {error && <output>{error}</output>}
+        </form>
+      </div>
+    </div>
       <Link to="/register">Need an account? Register here.</Link>
     </>
   );
