@@ -23,20 +23,32 @@ export default function Register() {
 
   return (
     <>
-      <h1>Register for an account</h1>
-      <form action={onRegister}>
-        <label>
-          Username
-          <input type="text" name="username" />
-        </label>
-        <label>
-          Password
-          <input type="password" name="password" required />
-        </label>
-        <button>Register</button>
-        {error && <output>{error}</output>}
-      </form>
+      <div id="loginText">Sign Up Below</div>
+    <div id="formLoginContainer2">
+      <div id="formLoginContainer">
+      
+        <form id="registerForm" action={onRegister}>
+
+            <label className="lLabel" >
+                Username
+              <input className="loginFormInputs" type="username" name="username" required />
+            </label>
+
+            <label className="lLabel">
+                Password
+              <input className="loginFormInputs" type="password" name="password" required />
+            </label>
+        
+          <div id="buttonContainer">
+            <button id="loginButton">Register</button>
+          </div>
+          {error && <output>{error}</output>}
+        </form>
+      </div>
+    </div>
+      <div id="loginLink">
       <Link to="/login">Already have an account? Log in here.</Link>
+      </div>
     </>
   );
 }

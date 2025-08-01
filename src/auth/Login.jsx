@@ -40,13 +40,16 @@ export default function Login() {
               <input className="loginFormInputs" type="password" name="password" required />
             </label>
         
-
-          <button>Login</button>
+          <div id="buttonContainer">
+            <button id="loginButton">Login</button>
+          </div>
           {error && <output>{error}</output>}
         </form>
       </div>
     </div>
+    <div id="registerLink">
       <Link to="/register">Need an account? Register here.</Link>
+      </div>
     </>
   );
 }

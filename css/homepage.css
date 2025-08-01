@@ -1,0 +1,11 @@
+#trailerFactsContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+#trailerFacts{
+    font-family:'Roboto Condensed';
+    padding: 1rem;
+    font-size: 1.5rem;
+}
