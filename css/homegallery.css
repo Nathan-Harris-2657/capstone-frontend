@@ -2,13 +2,20 @@
     background-color: grey;
     display: flex;
     justify-content: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
 #galleryBackground{
+    display: flex;
+    justify-content: center;
     background-color:rgb(221, 168, 83);
     margin: 1rem;
     border-radius: 10px;
     box-shadow: 0 0 5px black;
+    width: 50rem;
 
 }
 
@@ -16,4 +23,31 @@
     height: 25rem;
     margin: 1rem;
     border-radius: 5px;
+}
+#certifiedImg{
+    height: 15rem;
+}
+#vendorSupport{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+#vendorSupport a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family:'Roboto Condensed';
+    color: white;
+    background-color:rgb(221, 168, 83);
+    border-radius: 5px;
+    height: 2rem;
+    margin: 1rem;
+    transition: ease .5s all;
+    
+}
+#vendorSupport a:hover{
+    background-color: rgb(229, 186, 117);
+    color: rgb(39, 84, 138);
 }

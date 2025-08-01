@@ -9,3 +9,29 @@
     padding: 1rem;
     font-size: 1.5rem;
 }
+#homeGridContainer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 20rem 20rem 20rem 20rem;
+    grid-row: 20rem 20rem 20rem 20rem;
+    column-gap: 5rem;
+}
+#homeGridContainer a{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(grey, transparent);
+    text-align: center;
+    height: 10rem;
+    font-family: 'bebas neue';
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    transition: all .5s ease;
+
+}
+#homeGridContainer a:hover{
+    color: rgb(221, 168, 83);
+    
+}
+

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useEffect } from "react"
+import { Link } from "react-router"
 
 import trailer1 from "../assets/trailerpics/trailer1.jpg"
 import trailer2 from "../assets/trailerpics/trailer2.jpg"
@@ -24,6 +25,12 @@ function HomeGallery(){
         <div id="homeGalleryContainer">
             <div id="galleryBackground">
                 <img id="homeGalleryPics" src={trailerPics[index]} alt="" />
+            </div>
+            <div id="vendorSupport">
+                
+                <img id="certifiedImg" src="../assets/graphics/certifieddealer.png" alt="" />
+                
+                <Link to={"/vendors"}>Explore Vendors Now!</Link>
             </div>
         </div>
         </>
