@@ -14,7 +14,10 @@ export default function Navbar() {
       <NavLink to="/vendors">Vendors -</NavLink>
       
         {token ? (
-          <button id="logoutButton" onClick={logout}>Log out</button>
+          <>
+            <NavLink onClick={logout} style={{color: 'rgb(39, 84, 138)'}}>Log out -</NavLink>
+            <NavLink to="/account" style={{color: 'rgb(39, 84, 138)'}}>Account</NavLink>
+          </>
         ) : (
           <NavLink to="/login">Log In</NavLink>
         )}

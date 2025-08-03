@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { useQuery } from "../src/api/useQuery"
+import  useQuery  from "../src/api/useQuery.jsx"
 
 
 function ComparePage(){
