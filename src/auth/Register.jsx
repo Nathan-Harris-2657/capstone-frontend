@@ -13,8 +13,10 @@ export default function Register() {
   const onRegister = async (formData) => {
     const username = formData.get("username");
     const password = formData.get("password");
+    const email = formData.get("email")
+    const role = formData.get("role")
     try {
-      await register({ username, password });
+      await register({ username, password, email, role });
       navigate("/");
     } catch (e) {
       setError(e.message);
@@ -37,6 +39,20 @@ export default function Register() {
             <label className="lLabel">
                 Password
               <input className="loginFormInputs" type="password" name="password" required />
+            </label>
+
+            <label className="lLabel">
+              Email
+              <input className="loginFormInputs" type="text" name="email" required/>
+            </label>
+
+            <label className="lLabel">
+              Role
+              <select className="loginFormInputs" name="role">
+                <option value="">Select A Role</option>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+              </select>
             </label>
         
           <div id="buttonContainer">

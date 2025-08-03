@@ -14,7 +14,7 @@ function HomePage(){
         </div>
         <HomeGallery/>
         <div id="homeGridContainer">
-            <Link to={"/finance"}>Finacing</Link>
+            <Link to={"/finance"}>Financing</Link>
             <Link to={"/compliance"}>Compliance</Link>
             <Link to={"/articles"}>Articles</Link>
             <Link to={"/contact"}>Contact</Link>
