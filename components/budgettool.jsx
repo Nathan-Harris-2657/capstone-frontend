@@ -19,9 +19,7 @@ const averageRatePerMile = 2.36
           Select State
           <select name="state">
             {Object.entries(stateTaxRates).map(([state, rate]) => (
-              <option key={state} value={rate}>
-                {state} ({rate}%)
-              </option>
+              <option key={state} value={rate}>{state} ({rate}%)</option>
             ))}
           </select>
         </label> 
