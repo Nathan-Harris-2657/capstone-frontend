@@ -22,6 +22,7 @@ import "../css/login.css"
 import "../css/register.css"
 import "../css/homepage.css"
 import "../css/footer.css"
+import "../css/articlepage.css"
 
 
 

@@ -1,0 +1,37 @@
+#articleContainer{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(175, 131, 59),rgb(221, 168, 83),rgb(175, 131, 59));
+    align-items: center;
+    border-radius: 5px;
+    margin: 1rem;
+}
+#article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    font-family: 'Roboto Condensed';
+    margin: 1rem;
+
+}
+#articleTitle{
+    background-image: linear-gradient(to right, rgb(39, 84, 138), transparent);
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+
+#summaryUrlContainer{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-family:'Roboto Condensed';
+    text-indent: 1.5rem
+
+}
+#readMoreArticle{
+    text-decoration: none;
+    color:rgb(39, 84, 138);
+}
