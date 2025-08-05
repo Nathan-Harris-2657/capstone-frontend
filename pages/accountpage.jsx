@@ -1,7 +1,15 @@
+import useQuery from "../src/api/useQuery"
+
 function AccountPage(){
+    const{data: user, loading, error} = useQuery(`/users/me`);
+
+    if(loading || !user) return <p>Loading...</p>
+    if(error) return <p>I Broke</p>
+
+
     return(
         <>
-        <h1>test</h1>
+      <div>{user.username}</div>
         </>
     )
 }

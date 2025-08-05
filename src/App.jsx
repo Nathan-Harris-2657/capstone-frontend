@@ -13,6 +13,7 @@ import FinancePage from "../pages/financepage";
 import CompliancePage from "../pages/compliancepage";
 import ArticlesPage from "../pages/articlespage";
 import ContactPage from "../pages/contactpage";
+import AdminPage from "../pages/adminPage";
 // CSS FILES
 import "../css/navbar.css"
 import "../css/logo.css"
@@ -44,7 +45,7 @@ export default function App() {
         <Route path="/compliance" element={<CompliancePage/>}/>
         <Route path="/articles" element={<ArticlesPage/>}/>
         <Route path="/contact" element={<ContactPage/>}/>
-        
+        <Route path="/admin" element={<AdminPage/>}/>        
       </Route>
     </Routes>
   );
