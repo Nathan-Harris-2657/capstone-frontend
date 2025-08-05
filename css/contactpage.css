@@ -1,0 +1,36 @@
+#contactContainer{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(175, 131, 59),rgb(221, 168, 83),rgb(175, 131, 59));
+    padding: 2rem;
+    margin: 2rem;
+    column-gap: 2rem;
+    border-radius: 5px;
+}
+
+#map{
+    border: solid 2px rgb(39, 84, 138);
+    border-radius: 10px;
+}
+#mapContainer{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+#contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    font-family: 'Roboto Condensed';
+    font-size: 1.2rem;
+}
+#contactLogo{
+    height: 11rem;
+}
