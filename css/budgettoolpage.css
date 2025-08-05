@@ -2,21 +2,44 @@
     display: flex;
     justify-content: center;
     column-gap: 2rem;
-    padding: 2rem
+    padding: 2rem;
+    background-color: grey;
+    margin: 1rem;
 }
 #budgetToolContainer2{
     background-image: linear-gradient(rgb(175, 131, 59),rgb(221, 168, 83),rgb(175, 131, 59));
+    box-shadow: 0 0 10px;
 }
 #budgetToolInstructions{
     background-image: linear-gradient(rgb(175, 131, 59),rgb(221, 168, 83),rgb(175, 131, 59));
     padding: 2rem;
-    font-family: 'Roboto Condensed';
+    font-family: 'bebas neue';
+    box-shadow: 0 0 10px;
+    font-size: 2rem;
 }   
 #budgetTool{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-family: 'Roboto Condensed';
+    font-family: 'bebas neue';
     padding: 2rem;
     row-gap: 2rem;
+}
+.budgetLabel{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: .5rem;
+    font-size: 2rem;
+}
+.budgetInput{
+    font-family: 'Roboto Condensed';
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: ease all .5s;
+}
+.budgetInput:hover{
+    background-color:rgb(39, 84, 138) ;
+    color: white;
 }

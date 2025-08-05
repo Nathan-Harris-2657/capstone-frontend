@@ -15,26 +15,30 @@ const averageRatePerMile = 2.36
 
 {/* this form will take the price of the trailer you are looking to my and calculate a rough estimate including tax,FET, shipping */}
     <form id="budgetTool">
-            <label>Trailer Price
-                <input type="number" placeholder="Trailer Price Only" />
+            <label className="budgetLabel">Trailer Price
+                <input className="budgetInput" type="number" placeholder="Trailer Price Only" />
             </label>
 
 {/* creates a drop down to select what state */}
-        <label>
+        <label className="budgetLabel">
           Select State
-          <select name="state">
+          <select className="budgetInput" name="state">
             {Object.entries(stateTaxRates).map(([state, rate]) => (
               <option key={state} value={rate}>{state} ({rate}%)</option>
             ))}
           </select>
         </label> 
 
-        <label>FET %
-            <input type="number" name="fet" defaultValue={0.12}/>
+        <label className="budgetLabel">FET %
+            <input className="budgetInput" type="number" name="fet" defaultValue={0.12}/>
         </label>
 
-        <label>Cartage
-            <input type="number" name="miles" placeholder="Price Per Mile $2.36"/>            
+        <label className="budgetLabel">Cartage
+            <input className="budgetInput"  type="number" name="miles" placeholder="Price Per Mile $2.36"/>            
+        </label>
+
+        <label className="budgetLabel"> Total Trailer Price
+            <input className="budgetInput" type="number" />
         </label>
 
 
