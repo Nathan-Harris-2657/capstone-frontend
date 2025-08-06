@@ -27,6 +27,7 @@ import "../css/articlepage.css"
 import "../css/financepage.css"
 import "../css/contactpage.css"
 import "../css/budgettoolpage.css"
+import "../css/accountpage.css"
 
 
 
