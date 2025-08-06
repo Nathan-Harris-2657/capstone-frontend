@@ -9,6 +9,7 @@
 #budgetToolContainer2{
     background-image: linear-gradient(rgb(175, 131, 59),rgb(221, 168, 83),rgb(175, 131, 59));
     box-shadow: 0 0 10px;
+    border-radius: 10px;
 }
 #budgetToolInstructions{
     background-image: linear-gradient(rgb(175, 131, 59),rgb(221, 168, 83),rgb(175, 131, 59));
@@ -16,6 +17,7 @@
     font-family: 'bebas neue';
     box-shadow: 0 0 10px;
     font-size: 2rem;
+    border-radius: 10px;
 }   
 #budgetTool{
     display: flex;
@@ -43,3 +45,17 @@
     background-color:rgb(39, 84, 138) ;
     color: white;
 }
+#budgetInsTitle{
+    text-align: center;
+    font-size: 3rem;
+}
+.instructTitle{
+    font-size: 2.5rem;
+    color: rgb(39, 84, 138)
+}
+.instructInfo{
+    text-indent: 1.5rem;
+    font-size: 1.5rem;
+}
+
+

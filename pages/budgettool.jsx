@@ -9,12 +9,19 @@ function BudgetToolPage(){
             <div id="budgetToolInstructions">
                 <div id="budgetInsTitle">Instructions</div>
                 <div id="instructions">
-                    <p>When trailer price is enterend it should only be what the trailer cost no additions</p>
-                    <p>Please select the correct state in which you currently reside in</p>
-                    <p>FET only applys to new trailers, you may deduct $101 per axle. <br />
-                    FET is 12% of the Purchase price before state taxs and any other fees</p>
-                    <p>For the cartage, insert the miles between pickup and delivery. <br />
-                    This is using the national average rate per mile.</p>
+                    <div className="instructTitle">Trailer Price:</div>
+                        <div className="instructInfo">Enter only the base cost of the trailer. Do not include taxes, fees, or additional charges.</div>
+
+                    <div className="instructTitle">State Selection:</div>
+                        <div className="instructInfo">Choose the state where you currently reside. This ensures accurate tax and regulatory calculations.</div>
+
+                    <div className="instructTitle">Federal Excise Tax (FET)</div>
+                        <div className="instructInfo">FET applies only to new trailers. You may deduct $101 per axle from the taxable amount. <br />
+                        FET is calculated as 12% of the purchase price, before state taxes and other fees.</div>
+
+                    <div className="instructTitle">Cartage Calculations:</div>
+                        <div className="instructInfo" >Enter the number of miles between the trailer’s pickup and delivery locations. <br />
+                        This estimate uses the national average rate per mile to calculate transportation cost.</div>
                 </div>
             </div>
 

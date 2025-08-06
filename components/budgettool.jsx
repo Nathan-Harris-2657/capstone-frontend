@@ -1,3 +1,7 @@
+import { useState } from "react";
+import { useEffect } from "react";
+
+
 function BudgetTool(){
     const stateTaxRates = {
         AL: 4.00,AK: 0.00,AZ: 5.60,AR: 6.50,CA: 7.25,CO: 2.90,CT: 6.35,DE: 0.00,FL: 6.00,GA: 4.00,
@@ -7,38 +11,55 @@ function BudgetTool(){
         SD: 4.50,TN: 7.00,TX: 6.25,UT: 4.85,VT: 6.00,VA: 5.30,WA: 6.50,WV: 6.00,WI: 5.00,WY: 4.00,DC: 6.00
 };
 
-const averageRatePerMile = 2.36
+const averageRatePerMile = 2.36;
+
+  const [trailerPrice, setTrailerPrice] = useState()
+  const [selectedState, setSelectedState] = useState("MI")
+  const [miles, setMiles] = useState(0)
+  const [total, setTotal] = useState(0)
+
+  useEffect(() => {
+    const TaxRate = stateTaxRates[selectedState] || 0
+    const fet = trailerPrice * 0.12;
+    const cartage = miles * averageRatePerMile
+    const tax = trailerPrice * (TaxRate / 100)
+    const totalPrice = trailerPrice + fet + cartage + tax
+
+    setTotal(totalPrice)
+  }, [trailerPrice, miles, selectedState])
+
+
     
     return(
 <>
         
 
-{/* this form will take the price of the trailer you are looking to my and calculate a rough estimate including tax,FET, shipping */}
+
     <form id="budgetTool">
             <label className="budgetLabel">Trailer Price
-                <input className="budgetInput" type="number" placeholder="Trailer Price Only" />
+                <input className="budgetInput" type="number" value={trailerPrice} onChange={(e)=>setTrailerPrice(Number(e.target.value))} placeholder="Trailer Price Only" />
             </label>
 
-{/* creates a drop down to select what state */}
+
         <label className="budgetLabel">
           Select State
-          <select className="budgetInput" name="state">
+          <select className="budgetInput" name="state" value={selectedState} onChange={(e)=>setSelectedState(e.target.value)}>
             {Object.entries(stateTaxRates).map(([state, rate]) => (
-              <option key={state} value={rate}>{state} ({rate}%)</option>
+              <option key={state} value={state}>{state} ({rate}%)</option>
             ))}
           </select>
         </label> 
 
         <label className="budgetLabel">FET %
-            <input className="budgetInput" type="number" name="fet" defaultValue={0.12}/>
+            <input className="budgetInput" type="number" name="fet" defaultValue={0.12} readOnly/>
         </label>
 
         <label className="budgetLabel">Cartage
-            <input className="budgetInput"  type="number" name="miles" placeholder="Price Per Mile $2.36"/>            
+            <input className="budgetInput"  type="number" name="miles" value={miles} onChange={(e)=>setMiles(Number(e.target.value))} placeholder="Price Per Mile $2.36"/>            
         </label>
 
         <label className="budgetLabel"> Total Trailer Price
-            <input className="budgetInput" type="number" />
+            <input className="budgetInput" type="number" value={total} readOnly/>
         </label>
 
 
