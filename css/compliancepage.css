@@ -1,0 +1,58 @@
+#compToolContainer{
+    background-image:linear-gradient(rgb(175, 131, 59),rgb(221, 168, 83),rgb(175, 131, 59));
+}
+#compTitle{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    padding: .5rem;
+}
+.comps{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+#brakesContainer{
+    display: flex;
+    column-gap: 1rem;
+    grid-area: 1;
+}
+#selectionContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+#couplingContainer{
+    display: flex;
+    column-gap: 1rem;
+    grid-area: 1/2;
+}
+#exhaustContainer{
+    display: flex;
+    column-gap: 1rem;
+    grid-area: 1/3;
+}
+#fuelContainer{
+    display: flex;
+    column-gap: 1rem;
+    grid-area: 2/1
+}
+#safeLoadingContainer{
+    display: flex;
+    column-gap: 1rem;
+    grid-area: 2/2
+}
+#steeringMechContainer{
+     display: flex;
+    column-gap: 1rem;
+    grid-area: 2/3
+}
+#compContainer{
+    display: grid;
+    column-gap: 4rem;
+    row-gap: 4rem;
+    place-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
