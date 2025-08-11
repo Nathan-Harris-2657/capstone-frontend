@@ -1,7 +1,13 @@
+import ComplianceTool from "../components/compliancetool"
+
 function CompliancePage(){
     return(
         <>
-        <h1>test</h1>
+        <div id="compTitle">Annual Inpection Form</div>
+
+        <div id="compToolContainer">
+            <ComplianceTool/>
+        </div>
         </>
     )
 }

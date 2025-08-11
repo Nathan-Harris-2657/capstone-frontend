@@ -1,0 +1,21 @@
+#compTitle{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    padding: .5rem;
+}
+#compToolContainer{
+    background-image: linear-gradient(rgb(175, 131, 59),rgb(221, 168, 83),rgb(175, 131, 59));
+    
+}
+#brakesContainer{
+    display: flex;
+
+}
+#selection{
+    display: flex;
+    flex-direction: column;
+}
+.s1{
+    display: flex;
+}
