@@ -6,14 +6,6 @@ import Selector from "./selector"
 function ComplianceTool(){
 
 
-
-
-
-
-
-
-
-
     return(
         <>
     <div id="compContainer">
@@ -130,10 +122,68 @@ function ComplianceTool(){
                 <Selector/><Selector/><Selector/><Selector/><Selector/><Selector/><Selector/><Selector/><Selector/><Selector/>
             </div>
         </div>
-    </div>
-        
-        
 
+        <div id="suspContainer">
+            <div className="comps">
+                <div>Axle Positioning Parts</div>
+                <div>Spring Assembly</div>
+                <div>Torque, Radius or Tracking Components</div>
+            </div>
+
+            <div id="selectionContainer">
+                <Selector/><Selector/><Selector/>
+            </div>
+        </div>
+
+        <div id="frameContainer">
+            <div className="comps">
+                <div>Frame Members</div>
+                <div>Tire and Wheels Clearance</div>
+                <div>Adjustable Axle Assemblies</div>
+            </div>
+
+            <div id="selectionContainer">
+                <Selector/><Selector/><Selector/>
+            </div>
+        </div>
+
+        <div id="tiresContainer">
+            <div className="comps">
+                <div>Steer-Axle Tires</div>
+                <div>All Other Tires</div>
+                <div>Speed-Restricted Tires</div>
+            </div>
+
+            <div id="selectionContainer">
+                <Selector/><Selector/><Selector/>
+            </div>
+        </div>
+
+        <div id="wheelContainer">
+            <div className="comps">
+                <div>Lock or Side Ring</div>
+                <div>Wheels and Rims</div>
+                <div>Fasteners</div>
+                <div>Welds</div>
+            </div>
+
+            <div id="selectionContainer">
+                <Selector/><Selector/><Selector/><Selector/>
+            </div>
+        </div>
+
+        <div id="windshieldContainer">
+            <div className="comps">
+                <div>NO crack, discoloration, obstacles, etc</div>
+            </div>
+
+            <div id="selectionContainer">
+                <Selector/>
+            </div>
+        </div>
+
+    </div>
+    
         </>
     )
 }

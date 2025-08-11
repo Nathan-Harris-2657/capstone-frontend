@@ -1,15 +1,28 @@
+import  useQuery  from "../src/api/useQuery.jsx"
+
 function IndustriesPage(){
+    const{data: industries, loading, error} = useQuery(`/industries`);
+    
+        if(loading || !industries) return <p>Loading Our Industries</p>
+        if(error) return <p>I Broke</p>
+
+
     return(
         <>
-        <div id="industriesContainer">
-            <img id="wallPaper1" src="../assets/wallpaper/wallpaper1.jpg" alt="semi trucking in the fall" />
-
-            <div id="industriesInfo">
-                <h1>Industires Name</h1>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laboriosam repellendus voluptates est nostrum neque accusamus sunt repellat provident. Soluta nam in repudiandae accusamus libero, cumque officia velit doloremque et!</p>
+        <img id="wallPaper1" src="../assets/wallpaper/wallpaper1.jpg" alt="semi trucking in the fall" />
+    
+            <div id="industriesInfoContianer">
+                <div>{industries.map((industries, id) =>(
+                    <div key={id} id="industriesInfo">
+                        <div id="indTitle">{industries.name}</div>
+                        <div id="indDescr">{industries.description}</div>
+                    </div>
+                    
+                ))}</div>
+                
 
             </div>
-        </div>
+        
         </>
     )
 }

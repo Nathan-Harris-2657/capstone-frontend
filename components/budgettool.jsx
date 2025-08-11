@@ -19,7 +19,7 @@ const averageRatePerMile = 2.36;
   const [total, setTotal] = useState(0)
 
   useEffect(() => {
-    const TaxRate = stateTaxRates[selectedState] || 0
+    const TaxRate = stateTaxRates[selectedState]
     const fet = trailerPrice * 0.12;
     const cartage = miles * averageRatePerMile
     const tax = trailerPrice * (TaxRate / 100)
