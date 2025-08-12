@@ -1,7 +1,6 @@
-
-
 #wallPaper1{
-
+    display: flex;
+    justify-self: center;
     height: 30rem;
     border-radius: 50%;
 }

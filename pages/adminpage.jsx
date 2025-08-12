@@ -1,8 +1,10 @@
+import CreateTrailerForm from "../components/addtrailer"
+
 function AdminPage(){
     
     return(
         <>
-        <form action=""></form>
+        <CreateTrailerForm/>
         </>
     )
 }

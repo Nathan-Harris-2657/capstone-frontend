@@ -13,7 +13,7 @@ import FinancePage from "../pages/financepage";
 import CompliancePage from "../pages/compliancepage";
 import ArticlesPage from "../pages/articlespage";
 import ContactPage from "../pages/contactpage";
-import AdminPage from "../pages/adminPage";
+import AdminPage from "../pages/adminpage";
 // CSS FILES
 import "../css/navbar.css"
 import "../css/logo.css"

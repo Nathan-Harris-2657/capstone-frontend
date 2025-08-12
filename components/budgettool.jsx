@@ -15,7 +15,7 @@ const averageRatePerMile = 2.36;
 
   const [trailerPrice, setTrailerPrice] = useState()
   const [selectedState, setSelectedState] = useState("MI")
-  const [miles, setMiles] = useState(0)
+  const [miles, setMiles] = useState()
   const [total, setTotal] = useState(0)
 
   useEffect(() => {
