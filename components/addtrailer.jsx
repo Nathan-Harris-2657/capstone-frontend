@@ -1,40 +1,53 @@
-import useMutation from "../src/api/useMutation"
+import useMutation from "../src/api/useMutation";
 
-function CreateTrailerForm(){
-    const {mutate: createTrailer, loading, error} = useMutation("POST", "/trailers", "trailers")
-    
+function CreateTrailerForm() {
+  const { mutate: createTrailer, loading, error } = useMutation("POST", "/trailers", "trailers");
 
-    const handleSubmit = (FormData) => {
-    if (loading || error) {
-      if (error) console.log(error);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    if (loading) return;
+    if (error) {
+      console.error("Error creating trailer:", error);
       return;
     }
 
-    const type = FormData.get("type")
-    const make = FormData.get("make")
-    const model = FormData.get("model")
-    const year = FormData.get("year")
-    const specs = FormData.get("specs")
-    const img = FormData.get("img")
-    const price = FormData.get ("price")
+    const form = event.target;
+    const formData = new FormData(form);
 
-    createTrailer({type, make, model, year, specs, img, price})
-  }
+    const type = formData.get("type");
+    const make = formData.get("make");
+    const model = formData.get("model");
+    const year = parseInt(formData.get("year"), 10);
+    const specsRaw = formData.get("specs");
+    const imagesRaw = formData.get("img");
+    const price = parseFloat(formData.get("price"));
 
-    return(
-        <>
-        <form id="createTrailer" onSubmit={handleSubmit}>
-          <input name="type" placeholder="Type" />
-          <input name="make" placeholder="Make" />
-          <input name="model" placeholder="Model" />
-          <input name="year" type="number" placeholder="Year" />
-          <textarea name="specs" placeholder='{"length": "20ft", "axles": 2}' />
-          <input name="img" type="text" placeholder="Url"/>
-          <input name="price" type="number" step="0.01" placeholder="Price" />
-          <button type="submit">Submit</button>
-        </form>
+    let specs;
+    try {
+      specs = JSON.parse(specsRaw);
+    } catch (err) {
+      console.error("Invalid specs JSON:", err);
+      return;
+    }
 
-        </>
-    )
+    const images = imagesRaw ? [imagesRaw] : [];
+
+    createTrailer({ type, make, model, year, specs, images, price });
+  };
+
+  return (
+    <form id="createTrailer" onSubmit={handleSubmit}>
+      <input name="type" placeholder="Type" required />
+      <input name="make" placeholder="Make" required />
+      <input name="model" placeholder="Model" required />
+      <input name="year" type="number" placeholder="Year" required />
+      <textarea name="specs" placeholder='{"length": "20ft", "axles": 2}' required />
+      <input name="img" type="text" placeholder="Image URL" />
+      <input name="price" type="number" step="0.01" placeholder="Price" required />
+      <button type="submit" disabled={loading}>Submit</button>
+    </form>
+  );
 }
-export default CreateTrailerForm
+
+export default CreateTrailerForm;
