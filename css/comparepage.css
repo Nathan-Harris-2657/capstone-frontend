@@ -1,0 +1,54 @@
+#compareBackground{
+    background-image: linear-gradient(rgb(175, 131, 59),rgb(221, 168, 83),rgb(175, 131, 59));
+    padding: .5rem;
+    border-radius: 10px;
+
+}
+#compareBackground2{
+   background-image: linear-gradient(
+        rgb(24, 59, 78),
+        rgb(39, 84, 138),
+        rgb(39, 84, 138),
+        rgb(24, 59, 78)
+        );
+    border-radius: 10px;
+}
+#compareContainer{
+    display: grid;
+    grid-template-columns: 50rem;
+    grid-template-rows: 50rem;
+    
+}
+#compare1{
+    grid-area: 1/1;
+}
+#compare2{
+    grid-area: 1/2;
+}
+#compareBlurb{
+    font-family: 'Roboto Condensed';
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+#selectTrailerId{
+    margin: 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed';
+    box-shadow: 0 0 10px;
+    text-align: center;
+}
+#selectTrailerMake{
+    margin: 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed';
+    box-shadow: 0 0 10px;
+    text-align: center;
+}
+#selectContainer{
+    display: flex;
+    justify-content: center;
+    
+}

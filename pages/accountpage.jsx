@@ -1,54 +1,36 @@
-import useQuery from "../src/api/useQuery";
+import useQuery from "../src/api/useQuery"
 
-function AccountPage() {
-  const { data: user, loading: userLoading, error: userError } = useQuery("/users/me");
-  const { data: estimates = [], loading: estimatesLoading, error: estimatesError } = useQuery(
-    user ? "/users/me/estimates" : null
-  );
+function AccountPage(){
+    const{data: user, loading, error} = useQuery(`/users/me`);
 
-  if (userLoading || estimatesLoading) return <p>Account Page Loading...</p>;
-  if (userError || estimatesError) return <p>Something went wrong.</p>;
+    if(loading || !user) return <p>Account Page Loading...</p>
+    if(error) return <p>I Broke</p>
 
-  return (
-    <div id="accountContainer">
-      {/* User Info */}
-      <div id="profileContainer">
-        <div id="userName">{user.username}</div>
-        <div id="welcome">Welcome</div>
-      </div>
 
-      {/* Saved Estimates */}
-      <div id="estimatesContainer">
-        <div id="savedTitle">Saved Estimates</div>
+    return(
+        <>
+          <div id="accountContainer">
 
-        {estimates.length === 0 ? (
-          <p>No saved estimates yet.</p>
-        ) : (
-          <div id="savedEstimates">
-            <div className="estimateHeader">
-              <strong>Location</strong>
-              <strong>FET</strong>
-              <strong>Tax</strong>
-              <strong>Shipping</strong>
-              <strong>Total</strong>
-              <strong>Saved At</strong>
+          <div id="profileContainer">
+              <div id="userName">{user.username}</div>
+              <div id="welcome">Welcome</div>
+          </div> 
+
+          <div id="estimatesContainer">
+              <div id="savedTitle">Saved Estimates</div>
+            <div id="savedEstimates">
+              <div>Trailer Price</div>
+              <div>State Tax</div>
+              <div>FET Cost</div>
+              <div>Shipping</div>
+              <div>Total Price</div>
             </div>
+          </div> 
 
-            {estimates.map((est, i) => (
-              <div key={i} className="estimateRow">
-                <div>{est.location}</div>
-                <div>${est.fees.toFixed(2)}</div>
-                <div>${est.tax.toFixed(2)}</div>
-                <div>${est.shipping.toFixed(2)}</div>
-                <div>${est.total_cost.toFixed(2)}</div>
-                <div>{new Date(est.saved_at).toLocaleDateString()}</div>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
-  );
+          </div> 
+
+          
+        </>
+    )
 }
-
-export default AccountPage;
+export default AccountPage

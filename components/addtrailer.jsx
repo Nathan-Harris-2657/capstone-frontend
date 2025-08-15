@@ -1,7 +1,7 @@
 import useMutation from "../src/api/useMutation";
 
 function CreateTrailerForm() {
-  const { mutate: createTrailer, loading, error } = useMutation("POST", "/trailers", "trailers");
+  const { mutate: createTrailer, loading, error } = useMutation("POST", "/trailers", ["trailers"]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -34,6 +34,7 @@ function CreateTrailerForm() {
     const images = imagesRaw ? [imagesRaw] : [];
 
     createTrailer({ type, make, model, year, specs, images, price });
+    form.reset()
   };
 
   return (
