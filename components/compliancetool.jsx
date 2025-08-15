@@ -10,6 +10,7 @@ function ComplianceTool(){
         <>
     <div id="compContainer">
         <div id="brakesContainer">
+            
             <div className="comps">
                 <div>Service Brakes</div>
                 <div>Parking Brake System</div>
@@ -25,6 +26,8 @@ function ComplianceTool(){
                 <div>Antilock Brake System</div>
                 <div>Automatic Brake Adjusters</div>
             </div>
+            
+            
 
             <div id="selectionContainer">
                 <Selector/><Selector/><Selector/><Selector/><Selector/><Selector/>
@@ -36,6 +39,7 @@ function ComplianceTool(){
         </div>
 
         <div id="couplingContainer">
+            
             <div className="comps">
                 <div>Fifth Wheels</div>
                 <div>Pintle Hooks</div>
@@ -51,21 +55,8 @@ function ComplianceTool(){
         </div>
 
 
-        <div id="exhaustContainer">
-            <div className="comps">
-                <div>Leaks forward of or below driver/sleeper compartment</div>
-                <div>Discharges violating standards</div>
-                <div>Secured against shifting or vibration</div>
-            </div>
-
-            <div id="selectionContainer">
-                <Selector/><Selector/><Selector/>
-            </div>
-
-        </div>
-
-
         <div id="fuelContainer">
+           
             <div className="comps">
                 <div>No visible leaks</div>
                 <div>Missing filler cap</div>
@@ -79,6 +70,7 @@ function ComplianceTool(){
         </div>
 
         <div id="exhaustContainer">
+           
             <div className="comps">
                 <div>Leaks forward of or below driver/sleeper compartment</div>
                 <div>Discharges violating standards</div>
@@ -92,6 +84,7 @@ function ComplianceTool(){
         </div>
 
         <div id="safeLoadingContainer">
+            
             <div className="comps">
                 <div>Vehicle parts, load, dunnage, spare tire, ect. secured</div>
                 <div>Front End Structure</div>
@@ -105,6 +98,7 @@ function ComplianceTool(){
         </div>
 
         <div id="steeringMechContainer">
+            
             <div className="comps">
                 <div>Sterring Wheel Free Play</div>
                 <div>Steering Column</div>
@@ -124,6 +118,7 @@ function ComplianceTool(){
         </div>
 
         <div id="suspContainer">
+            
             <div className="comps">
                 <div>Axle Positioning Parts</div>
                 <div>Spring Assembly</div>
@@ -136,6 +131,7 @@ function ComplianceTool(){
         </div>
 
         <div id="frameContainer">
+           
             <div className="comps">
                 <div>Frame Members</div>
                 <div>Tire and Wheels Clearance</div>
@@ -148,6 +144,7 @@ function ComplianceTool(){
         </div>
 
         <div id="tiresContainer">
+            
             <div className="comps">
                 <div>Steer-Axle Tires</div>
                 <div>All Other Tires</div>
@@ -160,6 +157,7 @@ function ComplianceTool(){
         </div>
 
         <div id="wheelContainer">
+            
             <div className="comps">
                 <div>Lock or Side Ring</div>
                 <div>Wheels and Rims</div>
@@ -173,6 +171,7 @@ function ComplianceTool(){
         </div>
 
         <div id="windshieldContainer">
+            
             <div className="comps">
                 <div>NO crack, discoloration, obstacles, etc</div>
             </div>
