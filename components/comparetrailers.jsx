@@ -50,20 +50,36 @@ function CompareTrailers() {
     </div>
 
     
-      <div>
-        {filteredTrailers.length > 0 ? (
-          filteredTrailers.map((trailer, id) => (
-            <div key={id}>
-              <h4>ID: {trailer.id} {trailer.make} {trailer.model}</h4>
-              <p>Type: {trailer.type}</p>
-              <p>Year: {trailer.year}</p>
-              <p>Price: ${trailer.price}</p>
+      <div id="filteredTrailers">
+  {(selectedType || selectedMake) ? (
+    filteredTrailers.length > 0 ? (
+      filteredTrailers.map((trailer, id) => (
+        <div key={id}>
+
+          <div id="trailerInfoContainer">
+
+            <div id="trailerInfo">
+              <div id="trailerInfoTitle">ID: {trailer.id} {trailer.make} {trailer.model}</div>
+              <div>Type: {trailer.type}</div>
+              <div>Year: {trailer.year}</div>
+              <div>Price: ${trailer.price}</div>
             </div>
-          ))
-        ) : (
-          <p>No trailers found for the selected filters.</p>
-        )}
-      </div>
+
+            <div id="trailerPicture">
+              <img id="trailerImg" src={trailer.images} alt="Trailer Picture" />
+            </div>
+          </div>
+
+        </div>
+      ))
+    ) : (
+      <div>No trailers found for the selected filters.</div>
+    )
+  ) : (
+    <div id="pleaseSelect">Select A Trailer Type or Make To Begin Comparing.</div>
+  )}
+</div>
+
     </>
   );
 }
