@@ -1,5 +1,6 @@
 import CreateTrailerForm from "../components/addtrailer"
 import CreateVendor from "../components/addvendor"
+import CreateIndustry from "../components/addindustry"
 
 function AdminPage(){
     
@@ -7,6 +8,7 @@ function AdminPage(){
         <>
         <CreateTrailerForm/>
         <CreateVendor/>
+        <CreateIndustry/>
         </>
     )
 }

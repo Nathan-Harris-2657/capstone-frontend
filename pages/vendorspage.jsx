@@ -15,12 +15,14 @@ function VendorsPage(){
             <div id="vendorContainer">
                 <div id="vendorInfo">
                     {vendors.map((vendor, id) => (
-                    <div key={id} id="vendorInfo">
-                        <h1>{vendor.name}</h1>
-                        <p>{vendor.location}</p>
-                        <p>{vendor.contact_info.name}</p>
-                        <p>{vendor.contact_info.phone}</p>
-                        <p>{vendor.ratings}</p>
+                    <div key={id}>
+                        <div id="dealerName">{vendor.name}</div>
+                        <div id="infoContainer">
+                            <div>Location: {vendor.location}</div>
+                            <div>Name: {vendor.contact_info.name}</div>
+                            <div>Phone: {vendor.contact_info.phone}</div>
+                            <div>Rating: {vendor.ratings}</div>
+                        </div>
                     </div>
                 ))}
 

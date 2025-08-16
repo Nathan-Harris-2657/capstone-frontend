@@ -7,8 +7,24 @@
 
 #vendorContainer{
     background-color: rgb(221, 168, 83);
+    display: flex;
+    justify-content: center;
 }
 #vendorInfo{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-family: 'Roboto Condensed';
+    margin: 1rem;
+}
+#dealerName{
+    font-size: 2rem;
+    background-image: linear-gradient(to right, rgb(39, 84, 138), transparent);
+    color: white;
+    padding: .5rem;
+    border-radius: 10px;
+}
+#infoContainer{
+    text-align: center;
+    margin: .2rem;
 }
