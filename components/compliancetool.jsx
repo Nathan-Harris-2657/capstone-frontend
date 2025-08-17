@@ -5,6 +5,10 @@ import Selector from "./selector"
 
 function ComplianceTool(){
 
+    const handlePrint = () => {
+        window.print();}
+
+
 
     return(
         <>
@@ -180,6 +184,9 @@ function ComplianceTool(){
                 <Selector/>
             </div>
         </div>
+
+         <button id="printButton" onClick={handlePrint}> Print Your Check List Here</button>
+
 
     </div>
     

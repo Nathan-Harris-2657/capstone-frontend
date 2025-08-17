@@ -39,16 +39,19 @@ const { mutate: CreateVendor, loading, error } = useMutation("POST", "/vendors",
     
     return(
         <>
+        <div id="createVendorContainer">
+            <div id="createTitle"> Create Vendor</div>
         <form id="createVendor" onSubmit={handleSubmit}>
-            <input name="name" placeholder="Vendor Name" required />
-            <input name="location" placeholder="Location" required />
+            <input className="createInput" name="name" placeholder="Vendor Name" required />
+            <input className="createInput" name="location" placeholder="Location" required />
             <textarea
                 name="contactinfo"
                 placeholder='{"email": "vendor@example.com", "phone": "123-456-7890"}'
                 required/>
-            <input name="ratings" type="number" step="0.1" min="0" max="5" placeholder="Ratings (0–5)" />
-            <button type="submit" disabled={loading}>Submit</button>
+            <input className="createInput" name="ratings" type="number" step="0.1" min="0" max="5" placeholder="Ratings (0–5)" />
+            <button className="createButton" type="submit" disabled={loading}>Submit</button>
         </form>
+        </div>
 
         
         </>

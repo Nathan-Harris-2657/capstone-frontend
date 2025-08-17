@@ -1,0 +1,116 @@
+#adminContainer1{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    margin: 2rem;
+}
+#createTrailerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+    rgb(175, 131, 59),
+    rgb(221, 168, 83),
+    rgb(175, 131, 59)
+    );
+    border-radius: 10px;
+    box-shadow:  0 0 10px black; 
+    width: 40rem;   
+    display: flex;
+    justify-content: center;
+}
+#createTrailer{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 2rem;
+    row-gap: 1rem;
+}
+#createVendorContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+    rgb(175, 131, 59),
+    rgb(221, 168, 83),
+    rgb(175, 131, 59)
+    );
+    border-radius: 10px;
+    box-shadow:  0 0 10px black; 
+    width: 40rem;   
+    display: flex;
+    justify-content: center;
+}
+#createVendor{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 2rem;
+    row-gap: 1rem;
+}
+#createIndustireContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+    rgb(175, 131, 59),
+    rgb(221, 168, 83),
+    rgb(175, 131, 59)
+    );
+    border-radius: 10px;
+    box-shadow:  0 0 10px black; 
+    width: 40rem;   
+    display: flex;
+    justify-content: center;
+}
+#createIndustrie{
+      display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 2rem;
+    row-gap: 1rem;
+}
+#createIndustryTitle{
+    text-align: center;
+}
+.createButton{
+    background-image: linear-gradient(
+        rgb(24, 59, 78),
+        rgb(39, 84, 138),
+        rgb(39, 84, 138)
+        );
+    border-radius: 10px;
+    box-shadow:  0 0 10px rgb(255, 255, 255); 
+    font-size: 2rem;    
+    font-family: 'Roboto Condensed';
+    color: white;
+    font-weight: 500;
+}
+.createInput{
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(199, 199, 199);
+    transition: 1s all ease;
+    font-size: 1rem;
+}
+.createInput:hover{
+    background-color: white;
+    
+}
+textarea{
+    height:3rem;
+    border-radius: 10px;
+    background-color: rgb(199, 199, 199);
+    transition: 1s all ease;
+    font-size: 1rem;
+}
+textarea:hover{
+    background-color: white;
+}
+#createTitle{
+    font-family: 'bebas neue';
+    font-size: 2rem;
+}

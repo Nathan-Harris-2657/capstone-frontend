@@ -78,6 +78,9 @@
 
 
 #trailerImg{
-    height: 13rem;
+    height: 19rem;
     border-radius: 10px;
+}
+#trailerPrice{
+    font-weight: 500;
 }

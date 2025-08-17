@@ -30,6 +30,7 @@ import "../css/budgettoolpage.css"
 import "../css/accountpage.css"
 import "../css/compliancepage.css"
 import "../css/comparepage.css"
+import "../css/adminpage.css"
 
 
 

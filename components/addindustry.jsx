@@ -28,11 +28,14 @@ function CreateIndustry() {
   };
 
   return (
-    <form id="createTrailer" onSubmit={handleSubmit}>
-      <input name="name" placeholder="name" required />
-      <input name="description" placeholder="description" required />
-      <button type="submit" disabled={loading}>Submit</button>
+    <div id="createIndustireContainer">
+      <div id="createTitle"> Create Industry</div>
+    <form id="createIndustrie" onSubmit={handleSubmit}>
+      <input className="createInput" name="name" placeholder="name" required />
+      <input className="createInput" name="description" placeholder="description" required />
+      <button className="createButton" type="submit" disabled={loading}>Submit</button>
     </form>
+    </div>
   );
 }
 

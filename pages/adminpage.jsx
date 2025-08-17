@@ -6,9 +6,12 @@ function AdminPage(){
     
     return(
         <>
-        <CreateTrailerForm/>
-        <CreateVendor/>
-        <CreateIndustry/>
+        <div id="adminContainer1">
+            <CreateTrailerForm/>
+            <CreateVendor/>
+            <CreateIndustry/>
+        </div>
+        
         </>
     )
 }

@@ -183,3 +183,16 @@
     background-color: transparent
     
 }
+#printButton{
+    background-image: linear-gradient(
+        rgb(24, 59, 78),
+        rgb(39, 84, 138),
+        rgb(39, 84, 138)
+        );
+    border-radius: 10px;
+    box-shadow:  0 0 10px black; 
+    font-size: 2rem;    
+    font-family: 'Roboto Condensed';
+    color: white;
+    font-weight: 500;
+}

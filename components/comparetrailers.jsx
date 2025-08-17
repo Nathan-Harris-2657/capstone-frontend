@@ -62,7 +62,12 @@ function CompareTrailers() {
               <div id="trailerInfoTitle">ID: {trailer.id} {trailer.make} {trailer.model}</div>
               <div>Type: {trailer.type}</div>
               <div>Year: {trailer.year}</div>
-              <div>Price: ${trailer.price}</div>
+              <div>Length: {trailer.specs.dimensions.length}</div>
+              <div>Width: {trailer.specs.dimensions.width}</div>
+              <div>GVWR: {trailer.specs.gvwr}</div>
+              <div>Axles: {trailer.specs.axle_count}</div>
+              <div>Axle Type: {trailer.specs.axle_configuration}</div>
+              <div id="trailerPrice">Price: ${trailer.price}</div>
             </div>
 
             <div id="trailerPicture">

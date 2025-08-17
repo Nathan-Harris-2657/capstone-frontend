@@ -38,16 +38,19 @@ function CreateTrailerForm() {
   };
 
   return (
+    <div id="createTrailerContainer">
+      <div id="createTitle"> Create Trailer</div>
     <form id="createTrailer" onSubmit={handleSubmit}>
-      <input name="type" placeholder="Type" required />
-      <input name="make" placeholder="Make" required />
-      <input name="model" placeholder="Model" required />
-      <input name="year" type="number" placeholder="Year" required />
+      <input className="createInput" name="type" placeholder="Type" required />
+      <input className="createInput" name="make" placeholder="Make" required />
+      <input className="createInput" name="model" placeholder="Model" required />
+      <input className="createInput" name="year" type="number" placeholder="Year" required />
       <textarea name="specs" placeholder='{"length": "20ft", "axles": 2}' required />
-      <input name="img" type="text" placeholder="Image URL" />
-      <input name="price" type="number" step="0.01" placeholder="Price" required />
-      <button type="submit" disabled={loading}>Submit</button>
+      <input className="createInput" name="img" type="text" placeholder="Image URL" />
+      <input className="createInput" name="price" type="number" step="0.01" placeholder="Price" required />
+      <button className="createButton" type="submit" disabled={loading}>Submit</button>
     </form>
+    </div>
   );
 }
 
