@@ -18,16 +18,16 @@ function DeleteVendor() {
   if (!vendors?.length) return <p>No vendors found.</p>;
 
   return (
-    <div>
-      <h2>Vendor List</h2>
+    <div id="deleteVendorContainer">
+      <div className="deleteTitles">Vendor List</div>
       <ul>
         {vendors.map((vendor) => (
-          <li key={vendor.id} style={{ marginBottom: "1rem" }}>
+          <li className="deleteList" key={vendor.id}>
             <strong>{vendor.name}</strong> — {vendor.location}
             <br />
             Contact: {vendor.contact_info.name} | Ratings: {vendor.ratings}
             <br />
-            <button onClick={() => handleDelete(vendor.id)} disabled={deleting}>
+            <button className="deleteButton" onClick={() => handleDelete(vendor.id)} disabled={deleting}>
               {deleting ? "Deleting..." : "Delete"}
             </button>
           </li>

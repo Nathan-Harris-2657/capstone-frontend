@@ -1,0 +1,2 @@
+name Food & Beverage
+description Refrigerated trucks ensure safe transport of perishable goods from farms and factories to stores and restaurants.

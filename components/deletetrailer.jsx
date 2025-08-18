@@ -27,13 +27,13 @@ function DeleteTrailer() {
   if (error) return <p>I Broke</p>;
 
   return (
-    <div>
-      <h2>Our Trailers</h2>
+    <div id="deleteTrailerContainer">
+      <div className="deleteTitles">Our Trailers</div>
       <ul>
         {trailers.map((trailer) => (
-          <li key={trailer.id}>
+          <li className="deleteList" key={trailer.id}>
             <strong>{trailer.make} {trailer.model} ({trailer.year})</strong>
-            <button
+            <button className="deleteButton"
               onClick={() => handleDelete(trailer.id)}
               disabled={deletingId === trailer.id || mutationLoading}
             >
