@@ -6,7 +6,9 @@ function DeleteVendor() {
   const { data: vendors, loading, error } = useQuery("/vendors", "vendors");
   const [deletingId, setDeletingId] = useState(null);
 
-  const { mutate: deleteVendor, loading: mutationLoading, error: mutationError } = useMutation("DELETE", "vendors");
+  const { mutate: deleteVendor, loading: mutationLoading, error: mutationError } =
+  useMutation("DELETE", "/vendors:id", ["vendors"]);
+
 
   async function handleDelete(id) {
     if (!window.confirm("Are you sure you want to delete this vendor?")) return;
