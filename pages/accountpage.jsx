@@ -16,16 +16,7 @@ function AccountPage(){
               <div id="welcome">Welcome</div>
           </div> 
 
-          <div id="estimatesContainer">
-              <div id="savedTitle">Saved Estimates</div>
-            <div id="savedEstimates">
-              <div>Trailer Price</div>
-              <div>State Tax</div>
-              <div>FET Cost</div>
-              <div>Shipping</div>
-              <div>Total Price</div>
-            </div>
-          </div> 
+          
 
           </div> 
 

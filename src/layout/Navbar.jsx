@@ -16,7 +16,8 @@ export default function Navbar() {
         {token ? (
           <>
             <NavLink onClick={logout} style={{color: 'rgb(39, 84, 138)'}}>Log out -</NavLink>
-            <NavLink to="/account" style={{color: 'rgb(39, 84, 138)'}}>Account</NavLink>
+            <NavLink to="/account" style={{color: 'rgb(39, 84, 138)'}}>Account -</NavLink>
+            <NavLink to="/admin" style={{color: 'rgb(39, 84, 138)'}}>Admin Controls</NavLink>
           </>
         ) : (
           <NavLink to="/login">Log In</NavLink>
