@@ -1,0 +1,14 @@
+name Trailer Connection LLC
+location Monroe, MI
+Contact Info {"name": "Nathan Harris", "phone": "734-652-7230"}
+rating 4.8
+
+name Stoc Trailer
+location Louis, IL
+Contact Info {"name": "Jon Short", "phone": "618-482-4000"}
+rating 4.2
+
+name Trailer One
+location Medina, OH
+Contact Info {"name": "Chris Shuster", "phone": "330-723-7474"}
+rating 4.7

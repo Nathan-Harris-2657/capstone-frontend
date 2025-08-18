@@ -4,6 +4,12 @@
     column-gap: 2rem;
     margin: 2rem;
 }
+#adminContainer2{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    margin: 2rem;
+}
 #createTrailerContainer{
     display: flex;
     flex-direction: column;

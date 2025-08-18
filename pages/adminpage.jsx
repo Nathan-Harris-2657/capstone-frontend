@@ -3,6 +3,8 @@ import CreateVendor from "../components/addvendor"
 import CreateIndustry from "../components/addindustry"
 import DeleteTrailer from "../components/deletetrailer"
 import DeleteVendor from "../components/deletevendor"
+import DeleteIndustry from "../components/deleteindustry"
+
 
 
 function AdminPage(){
@@ -14,9 +16,10 @@ function AdminPage(){
             <CreateVendor/>
             <CreateIndustry/>
         </div>
-        <div>
+        <div id="adminContainer2">
             <DeleteTrailer/>
             <DeleteVendor/>
+            <DeleteIndustry/>
         </div>
         
         </>

@@ -6,14 +6,15 @@ function DeleteTrailer() {
   const { data: trailers, loading, error } = useQuery("/trailers", "trailers");
   const [deletingId, setDeletingId] = useState(null);
 
-  const { mutate: deleteTrailer, loading: mutationLoading, error: mutationError } = useMutation("DELETE", "trailers");
+  const { mutate: deleteTrailer, loading: mutationLoading, error: mutationError } =
+  useMutation("DELETE", "trailers", ["trailers"]);
 
   async function handleDelete(id) {
     if (!window.confirm("Are you sure you want to delete this trailer?")) return;
 
     setDeletingId(id);
     try {
-      const success = await deleteTrailer(`/trailers/${id}`);
+      const success = await deleteTrailer(null, `/trailers/${id}`);
       if (!success) throw new Error("Mutation failed");
     } catch (err) {
       console.error("Delete error:", err);

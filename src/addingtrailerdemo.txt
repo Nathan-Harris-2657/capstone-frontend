@@ -1,0 +1,25 @@
+adding a trailer
+
+type Flatbed
+make Reitnouer
+model Big Bubba
+year 2026
+specs {"gvwr": "80,000 lbs", "axle_count": 2, "dimensions": {"width": "102 in", "height": "58 in", "length": "53 ft"}, "composition": "All Aluminum", "axle_configuration": "Fixed Spread"}
+image url {https://interstate365.com/wp-content/uploads/2025/02/REITNOUER-BIGGER-BUBBA-1.jpg}
+price 66000
+
+type Drop Deck
+make Reitnouer
+model Bigger Bubba
+year 2026
+specs {"gvwr": "80,000 lbs", "axle_count": 2, "dimensions": {"width": "102 in", "height": "36 in", "length": "53 ft"}, "composition": "All Aluminum", "axle_configuration": "Sliding Rear Axle"}
+image url {https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemEMCOVZhGNJvjM0z-3xoXRXARxzKzoM5Yw&s}
+price 79900
+
+type Low Boy
+make Fontaine
+model 55LCC
+year 2026
+specs {"gvwr": "110000 lbs", "axle_count": 3, "dimensions": {"width": "102 in", "height": "18 in", "length": "53 ft"}, "composition": "All Steel", "axle_configuration": "Fixed Tridem"}
+image url {https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQum0bnHW3AyZGRArFX2XWNajo5zvtFuZQZA&s}
+price 115000
