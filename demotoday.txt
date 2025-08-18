@@ -1,0 +1,7 @@
+step 1 talk about how this app is different than other trailer websites
+
+step 2 customer logs in and explaine the flow of the websites
+
+step 3 talk about when making tables, instead of making a bunch of colums for table trailers i did some reserch and was able to find a way to store more data into one colume.
+
+step 4 go over some routes and issues i had and how i was able to solve them
